@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "project/node_modules/.bin/vite",
-    "build": "project/node_modules/.bin/tsc -b && vite build",
-    "lint": "project/node_modules/.bin/eslint .",
-    "preview": "project/node_modules/.bin/vite preview"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint test-frontend",
+    "preview": "vite preview"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
