@@ -1,0 +1,17 @@
+$primary: #0B0B0B;
+$primary-foreground: #FBFBFB;
+$muted-foreground: #B7B7B7;
+$surface: #969696;
+$secondary: #F5F5F5;
+$orange-primary: #F14E1D;
+$orange-secondary: #FFF7ED;
+
+%colors {
+  --primary: #{$primary};
+  --primary-foreground: #{$primary-foreground};
+  --muted-foreground: #{$muted-foreground};
+  --surface: #{$surface};
+  --secondary: #{$secondary};
+  --orange-primary: #{$orange-primary};
+  --orange-secondary: #{$orange-secondary};
+}
