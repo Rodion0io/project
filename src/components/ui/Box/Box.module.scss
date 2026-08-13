@@ -1,0 +1,77 @@
+$flexDirection: (
+  'row': row,
+  'rowReverse': row-reverse,
+  'column': column,
+  'columnReverse': column-reverse
+);
+
+$justifyContent: (
+   'normal': normal,
+   'center': center,
+   'flexStart': flex-start,
+   'flexEnd': flex-end,
+   'spaceBetween': space-between,
+   'spaceAround': space-around,
+   'spaceEvenly': space-evenly,
+);
+
+$alignItems: (
+   'normal': normal,
+   'center': center,
+   'flexStart': flex-start,
+   'flexEnd': flex-end,
+   'baseline': baseline,
+   'stretch': stretch,
+);
+
+$flexWrap: (
+   'nowrap': nowrap,
+   'wrap': wrap,
+   'wrapReverse': wrap-reverse,
+);
+
+$gap: (
+   '0': 0px,
+   '2': 2px,
+   '4': 4px,
+   '6': 6px,
+   '8': 8px,
+   '10': 10px,
+   '12': 12px,
+   '14': 14px,
+   '16': 16px,
+);
+
+.root {
+  display: flex;
+}
+
+@each $key, $value in $flexDirection {
+  .root_flexDirectionType_#{$key} {
+    flex-direction: $value;
+  }
+}
+
+@each $key, $value in $justifyContent {
+  .root_justifyContentType_#{$key} {
+    justify-content: $value;
+  }
+}
+
+@each $key, $value in $alignItems {
+  .root_alignItemsType_#{$key} {
+    align-items: $value;
+  }
+}
+
+@each $key, $value in $flexWrap {
+  .root_flexWrapType_#{$key} {
+    flex-wrap: $value;
+  }
+}
+
+@each $key, $value in $gap {
+  .root_gapType_#{$key} {
+    gap: $value;
+  }
+}
