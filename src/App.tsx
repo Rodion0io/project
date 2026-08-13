@@ -1,7 +1,9 @@
+import {RouterProvider} from "./providers/Router/RouterProvider.tsx";
+
 function App() {
 
   return (
-    <>hello world</>
+    <RouterProvider/>
   )
 }
 
