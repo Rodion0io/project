@@ -4,6 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: none;
+  user-select: none;
 
   &_sm {
     padding: 4px 12px 4px 12px;
@@ -72,7 +74,7 @@
   &_secondary {
     &.root_orange {
       background-color: var(--orange-50);
-      color: var(--orange-700);
+      color: var(--orange-primary);
 
       &:hover {
         background-color: var(--orange-100);
