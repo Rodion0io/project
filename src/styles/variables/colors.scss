@@ -1,17 +1,37 @@
-$primary: #0B0B0B;
-$primary-foreground: #FBFBFB;
-$muted-foreground: #B7B7B7;
+$primary: #0b0b0b;
+$black-300: #ebebeb;
+$black-400: #d4d4d4;
+$black-700: #969696;
+$black-800: #2e2e2e;
+$primary-foreground: #fbfbfb;
+$muted-foreground: #b7b7b7;
 $surface: #969696;
-$secondary: #F5F5F5;
-$orange-primary: #F14E1D;
-$orange-secondary: #FFF7ED;
+$secondary: #f5f5f5;
+$secondary-hover: #f3f3f3;
+$orange-primary: #f14e1d;
+$orange-500: #f97316;
+$orange-700: #c2410c;
+$orange-800: #9a3412;
+$orange-50: #fff7ed;
+$orange-100: #ffedd5;
+$orange-200: #fed7aa;
 
-%colors {
+:root {
   --primary: #{$primary};
+  --black-300: #{$black-300};
+  --black-400: #{$black-400};
+  --black-700: #{$black-700};
+  --black-800: #{$black-800};
   --primary-foreground: #{$primary-foreground};
   --muted-foreground: #{$muted-foreground};
   --surface: #{$surface};
   --secondary: #{$secondary};
+  --secondary-hover: #{$secondary-hover};
   --orange-primary: #{$orange-primary};
-  --orange-secondary: #{$orange-secondary};
+  --orange-500: #{$orange-500};
+  --orange-700: #{$orange-700};
+  --orange-800: #{$orange-800};
+  --orange-50: #{$orange-50};
+  --orange-100: #{$orange-100};
+  --orange-200: #{$orange-200};
 }

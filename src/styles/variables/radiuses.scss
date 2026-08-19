@@ -1,1 +1,5 @@
-$radius-16: 16px;
+$max-radius: 9999px;
+
+:root {
+  --max-radius: #{$max-radius};
+}
