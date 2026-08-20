@@ -1,8 +1,8 @@
 interface TabsProps {
     items: TabItems[];
-    selectedValue: TabItems['id']
-    onChange: (id: TabItems['id']) => void;
 
+    selectedValue?: TabItems['id']
+    onChange?: (id: TabItems['id']) => void;
     className?: string;
 }
 

@@ -7,6 +7,7 @@ interface IconProps {
 type IconType =
     'user'
     | 'clock'
-    | 'chevronDown';
+    | 'chevronDown'
+    | 'basket';
 
 export type { IconProps };
