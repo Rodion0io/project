@@ -1,0 +1,38 @@
+.root {
+  width: 184px;
+}
+
+.photoContainer {
+  background-color: var(--secondary);
+  border-radius: var(--radius-24);
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.productPhoto {
+  padding-top: 6px;
+  width: 100%;
+  height: 100%;
+}
+
+.productName {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.priceBlock {
+  width: 100%;
+  border-radius: var(--max-radius);
+  background-color: var(--secondary);
+  padding: 10px 0px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}

@@ -8,6 +8,7 @@ type IconType =
     'user'
     | 'clock'
     | 'chevronDown'
-    | 'basket';
+    | 'basket'
+    | 'plus';
 
 export type { IconProps };

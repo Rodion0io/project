@@ -1,0 +1,12 @@
+.root {
+  border-radius: var(--max-radius);
+
+  &_size_md {
+    padding: 8px 16px;
+  }
+
+  &_color_orange {
+    color: var(--primary-foreground);
+    background-color: var(--orange-primary);
+  }
+}
