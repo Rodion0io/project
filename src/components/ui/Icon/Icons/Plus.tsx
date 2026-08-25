@@ -7,6 +7,6 @@ export const Plus = (props: IconComponentProps) =>(
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
     >
-        <path d="M0.75 5.41667H10.0833M5.41667 0.75V10.0833" stroke="#0B0B0B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M0.75 5.41667H10.0833M5.41667 0.75V10.0833" stroke="#0B0B0B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
 )

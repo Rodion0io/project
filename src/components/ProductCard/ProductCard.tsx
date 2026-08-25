@@ -1,11 +1,13 @@
 import st from "./ProductCard.module.scss";
 
-import type {ProductCardProps} from "./types/ProductCardProps.ts";
 import {Box} from "../ui/Box/Box.tsx";
-import clsx from "clsx";
 import {Text} from "../ui/Text/Text.tsx";
 import {Icon} from "../ui/Icon/Icon.tsx";
 import {Badge} from "../ui/Badge/Badge.tsx";
+
+import type {ProductCardProps} from "./types/ProductCardProps.ts";
+
+import clsx from "clsx";
 
 export const ProductCard = (props: ProductCardProps) => {
 
@@ -15,7 +17,10 @@ export const ProductCard = (props: ProductCardProps) => {
         price,
         className,
         badgeText,
+        onOpen,
     } = props
+
+    console.log(onOpen())
 
     return (
         <Box

@@ -1,9 +1,8 @@
-interface ProductCardProps {
-    img: string;
-    name: string
-    price: number;
+import type {Product} from "../../../repository/product/types/Product.ts";
 
-    badgeText?: string;
+interface ProductCardProps extends Pick<Product, 'img' | 'name' | 'price' | 'badgeText'>{
+    onOpen: () => void;
+
     className?: string;
 }
 
