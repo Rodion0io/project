@@ -1,1 +1,1 @@
-export const PIZZA_URL = "https://juniorsbootcamp.ru/api/";
+export const PIZZA_URL = "https://juniorsbootcamp.ru/api";

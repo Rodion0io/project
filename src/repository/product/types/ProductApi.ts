@@ -43,4 +43,4 @@ interface Options {
 
 type Category = 'pizza' | 'breakfast' | 'wings' | 'milkshake';
 
-export type { ProductApi };
+export type { ProductApi, Catalog, Category };
