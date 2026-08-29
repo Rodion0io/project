@@ -9,6 +9,7 @@ import type {IconProps} from "./types/IconProps.ts";
 import clsx from "clsx";
 import {Basket} from "./Icons/Basket.tsx";
 import {Plus} from "./Icons/Plus.tsx";
+import {Cross} from "./Icons/Cross.tsx";
 
 export const Icon = (props: IconProps) => {
 
@@ -19,6 +20,7 @@ export const Icon = (props: IconProps) => {
         clock: <Clock className={clsx(st.root, className)}/>,
         chevronDown: <ChevronDown className={clsx(st.root, className)}/>,
         basket: <Basket className={clsx(st.root, className)}/>,
-        plus: <Plus className={clsx(st.root, className)}/>
+        plus: <Plus className={clsx(st.root, className)}/>,
+        cross: <Cross className={clsx(st.root, className)}/>,
     }[type]
 }

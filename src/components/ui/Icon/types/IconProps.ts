@@ -9,6 +9,7 @@ type IconType =
     | 'clock'
     | 'chevronDown'
     | 'basket'
-    | 'plus';
+    | 'plus'
+    | 'cross';
 
 export type { IconProps };

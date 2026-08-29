@@ -1,7 +1,9 @@
+$radius-16: 16px;
 $radius-24: 24px;
 $max-radius: 9999px;
 
 :root {
+  --radius-16: #{$radius-16};
   --radius-24: #{$radius-24};
   --max-radius: #{$max-radius};
 }
