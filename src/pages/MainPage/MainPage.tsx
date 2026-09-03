@@ -1,6 +1,7 @@
 import {MenuToolbar} from "../../components/MenuToolbar/MenuToolbar.tsx";
-import {useMainPage} from "./hooks/useMainPage.ts";
 import {CategorySection} from "../../components/CategorySection/CategorySection.tsx";
+
+import {useMainPage} from "./hooks/useMainPage.ts";
 
 export const MainPage = () => {
 

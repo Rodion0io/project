@@ -10,6 +10,7 @@ import clsx from "clsx";
 import {Basket} from "./Icons/Basket.tsx";
 import {Plus} from "./Icons/Plus.tsx";
 import {Cross} from "./Icons/Cross.tsx";
+import {Checkmark} from "./Icons/Checkmark.tsx";
 
 export const Icon = (props: IconProps) => {
 
@@ -22,5 +23,6 @@ export const Icon = (props: IconProps) => {
         basket: <Basket className={clsx(st.root, className)}/>,
         plus: <Plus className={clsx(st.root, className)}/>,
         cross: <Cross className={clsx(st.root, className)}/>,
+        checkmark: <Checkmark className={clsx(st.root, className)}/>,
     }[type]
 }

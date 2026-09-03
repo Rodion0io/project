@@ -10,6 +10,7 @@ type IconType =
     | 'chevronDown'
     | 'basket'
     | 'plus'
-    | 'cross';
+    | 'cross'
+    | 'checkmark';
 
 export type { IconProps };

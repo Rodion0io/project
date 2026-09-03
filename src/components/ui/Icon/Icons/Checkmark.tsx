@@ -1,0 +1,7 @@
+import type {IconComponentProps} from "../types/IconComponentProps.ts";
+
+export const Checkmark = (props: IconComponentProps) => (
+    <svg {...props} width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.41667 7.41667L6.75 8.75L9.41667 6.08333M14.0833 7.41667C14.0833 11.0986 11.0986 14.0833 7.41667 14.0833C3.73477 14.0833 0.75 11.0986 0.75 7.41667C0.75 3.73477 3.73477 0.75 7.41667 0.75C11.0986 0.75 14.0833 3.73477 14.0833 7.41667Z" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+)
