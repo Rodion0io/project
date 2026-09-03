@@ -190,6 +190,19 @@
     }
   }
 
+  &.root_white {
+    background-color: #fff;
+    color: var(--primary);
+
+    &:hover {
+      background-color: var(--secondary);
+    }
+
+    &:active {
+      background-color: var(--black-300);
+    }
+  }
+
   &:disabled {
     opacity: 0.2;
     cursor: not-allowed;

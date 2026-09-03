@@ -13,6 +13,6 @@ interface ButtonProps {
 
 type ButtonSize = 'sm' | 'md' | 'lg';
 type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost';
-type ButtonColor = 'orange' | 'orangeSoft' | 'black' | 'grey';
+type ButtonColor = 'orange' | 'orangeSoft' | 'black' | 'grey' | 'white';
 
 export type { ButtonProps };
