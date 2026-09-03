@@ -20,8 +20,6 @@ export const ProductCard = (props: ProductCardProps) => {
         onOpen,
     } = props
 
-    console.log(onOpen())
-
     return (
         <Box
             className={clsx(className, st.root)}
@@ -69,7 +67,11 @@ export const ProductCard = (props: ProductCardProps) => {
                 >
                     {`от ${price} ₽`}
                 </Text>
-                <Icon type="plus" className={st.icon}/>
+                <Icon
+                    type="plus"
+                    className={st.icon}
+                    onClick={onOpen}
+                />
             </Box>
         </Box>
     )

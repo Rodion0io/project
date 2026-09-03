@@ -1,6 +1,6 @@
-import type {ModalProduct} from "../../../repository/product/types/ModalProduct.ts";
+import type {Product} from "../../../repository/product/types/Product.ts";
 
-interface ProductModalProps extends ModalProduct {
+interface ProductModalProps extends Pick<Product, 'id' | 'name' | 'description' | 'img' | 'ingredients' | 'sizes' | 'options'> {
     closeModal: () => void;
 }
 

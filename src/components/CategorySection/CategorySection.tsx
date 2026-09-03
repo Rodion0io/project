@@ -7,10 +7,9 @@ export const CategorySection = (props: CategorySectionProps) => {
 
     const {
         sectionTitle,
-        products
+        products,
+        onProductOpen
     } = props;
-
-    const testCallback = () => console.log('123')
 
     return (
         <Box
@@ -30,7 +29,7 @@ export const CategorySection = (props: CategorySectionProps) => {
                 {products.map((item) => (
                     <ProductCard
                         key={item.id}
-                        onOpen={testCallback}
+                        onOpen={() => onProductOpen(item.id)}
                         {...item}
                     />
                 ))}

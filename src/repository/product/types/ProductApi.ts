@@ -31,7 +31,7 @@ interface Ingredients {
 }
 
 interface Sizes {
-    type: string;
+    type: SizeType;
     price: number;
     volume: number;
 }
@@ -42,5 +42,6 @@ interface Options {
 }
 
 type Category = 'pizza' | 'breakfast' | 'wings' | 'milkshake';
+type SizeType = "small" | "medium" | "large";
 
-export type { ProductApi, Catalog, Category };
+export type { ProductApi, Catalog, Category, Ingredients, Sizes, Options, SizeType };

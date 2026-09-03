@@ -7,8 +7,6 @@ import {Button} from "../ui/Button/Button.tsx";
 import {Text} from "../ui/Text/Text.tsx";
 import {Ingredients} from "../Ingrediets/Ingredients.tsx";
 
-
-
 export const ProductModal = (props: ProductModalProps) => {
 
     const {

@@ -1,4 +1,4 @@
-import type {Category} from "./ProductApi.ts";
+import type {Category, Ingredients, Options, Sizes} from "./ProductApi.ts";
 
 interface Product {
     id: string;
@@ -6,8 +6,25 @@ interface Product {
     name: string
     price: number;
     category: Category;
+    description: string;
+    ingredients: Ingredient[];
+    sizes: Size[];
+    options: Option[];
 
     badgeText?: string;
 }
 
-export type { Product }
+type Ingredient = Omit<Ingredients, 'price'> & {
+    price: string;
+}
+
+type Size = Omit<Sizes, 'type' | 'price'> & {
+    type: string;
+    price: string;
+}
+
+type Option = Omit<Options, 'price'> & {
+    price: string;
+}
+
+export type { Product, Ingredient, Size, Option };

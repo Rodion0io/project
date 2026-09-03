@@ -8,7 +8,7 @@ import {Icon} from "../Icon/Icon.tsx";
 
 export const Modal = (props: ModalProps) => {
 
-    const { className, isOpen, children } = props
+    const { className, isOpen, children, setIsOpen } = props
 
     if (!isOpen) return null;
 
@@ -27,7 +27,11 @@ export const Modal = (props: ModalProps) => {
                     justifyContent="flexEnd"
                     alignItems="center"
                 >
-                    <Icon type="cross" className={st.icon}/>
+                    <Icon
+                        type="cross"
+                        className={st.icon}
+                        onClick={setIsOpen}
+                    />
                 </Box>
                 {children}
             </Box>

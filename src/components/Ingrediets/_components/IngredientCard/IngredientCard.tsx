@@ -49,7 +49,7 @@ export const IngredientCard = (props: IngredientCardProps) => {
                 weight="600"
                 size="14"
             >
-                {`${price} ₽`}
+                {price}
             </Text>
         </Box>
     )

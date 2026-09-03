@@ -1,4 +1,4 @@
-import type {Ingredient} from "../../../../../repository/product/types/ModalProduct.ts";
+import type {Ingredient} from "../../../../../repository/product/types/Product.ts";
 
 interface IngredientCardProps extends Ingredient{
     onSelect: (type: string) => void;

@@ -1,10 +1,11 @@
-import type {Product} from "../types/Product.ts";
-import {pizzaInstance} from "../../../api/fetchInstances/pizzaInstance.ts";
-import type {ProductApi} from "../types/ProductApi.ts";
+import {fetchProductList} from "../../../api/fetchMethods/fetchProductList/fetchProductList.ts";
+
 import {productMapper} from "../mapper/productMapper.ts";
 
+import type {Product} from "../types/Product.ts";
+
 export const getProducts = async (): Promise<Product[]> => {
-    const { catalog } = await pizzaInstance.get<ProductApi>({ url: "/pizzas/catalog" });
+    const { catalog } = await fetchProductList();
 
     return catalog.map((model) => productMapper(model));
 }

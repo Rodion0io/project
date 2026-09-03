@@ -2,6 +2,9 @@ import type {Catalog} from "../types/ProductApi.ts";
 import type {Product} from "../types/Product.ts";
 import {getBadgeText} from "../functions/getBadgeText.ts";
 import {PIZZA_URL} from "../../../utils/constants/PIZZA_URL.ts";
+import {ingredientsMapper} from "./ingredientsMapper.ts";
+import {sizesMapper} from "./sizesMapper.ts";
+import {optionsMapper} from "./optionsMapper.ts";
 
 export const productMapper = (product: Catalog): Product => ({
     id: product._id,
@@ -10,4 +13,8 @@ export const productMapper = (product: Catalog): Product => ({
     price: product.sizes[0].price,
     category: product.category,
     badgeText: getBadgeText(product),
+    description: product.description,
+    ingredients: product.ingredients.map(item => ingredientsMapper(item)),
+    sizes: product.sizes.map(item => sizesMapper(item)),
+    options: product.options.map(item => optionsMapper(item)),
 });

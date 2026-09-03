@@ -1,4 +1,5 @@
-import type {Ingredient} from "../../../repository/product/types/ModalProduct.ts";
+import type {Ingredient} from "../../../repository/product/types/Product.ts";
+
 
 interface IngredientsProps {
     ingredients: Ingredient[]
