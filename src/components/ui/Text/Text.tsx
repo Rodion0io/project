@@ -10,10 +10,12 @@ export const Text = (props: TextProps) => {
         className,
         size = '20',
         weight = '400',
+        onClick
     } = props
 
     return (
         <span
+            onClick={onClick}
             className={
                 clsx(
                     className,

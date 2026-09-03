@@ -1,15 +1,18 @@
+import st from "./ProductModal.module.scss";
+
 import type {ProductModalProps} from "./types/ProductModalProps.ts";
+
 import {Box} from "../ui/Box/Box.tsx";
 import {Button} from "../ui/Button/Button.tsx";
 import {Text} from "../ui/Text/Text.tsx";
-import st from "./ProductModal.module.scss";
 import {Ingredients} from "../Ingrediets/Ingredients.tsx";
+
+
 
 export const ProductModal = (props: ProductModalProps) => {
 
     const {
         closeModal,
-        id,
         name,
         description,
         img,
@@ -17,8 +20,6 @@ export const ProductModal = (props: ProductModalProps) => {
         sizes,
         options
     } = props;
-
-    console.log(id)
 
     return (
         <Box

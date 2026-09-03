@@ -8,6 +8,7 @@ interface BoxProps {
     alignItems?: AlignItems;
     flexWrap?: FlexWrap;
     gap?: Gap;
+    onClick?: () => void;
 }
 
 type FlexDirection = 'row' | 'rowReverse' | 'column' | 'columnReverse';

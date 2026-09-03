@@ -2,6 +2,7 @@ interface IconProps {
     type: IconType;
 
     className?: string;
+    onClick?: () => void;
 }
 
 type IconType =

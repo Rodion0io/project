@@ -14,15 +14,15 @@ import {Checkmark} from "./Icons/Checkmark.tsx";
 
 export const Icon = (props: IconProps) => {
 
-    const { type, className } = props
+    const { type, className, onClick } = props
 
     return {
-        user: <User className={clsx(st.root, className)}/>,
-        clock: <Clock className={clsx(st.root, className)}/>,
-        chevronDown: <ChevronDown className={clsx(st.root, className)}/>,
-        basket: <Basket className={clsx(st.root, className)}/>,
-        plus: <Plus className={clsx(st.root, className)}/>,
-        cross: <Cross className={clsx(st.root, className)}/>,
-        checkmark: <Checkmark className={clsx(st.root, className)}/>,
+        user: <User onClick={onClick} className={clsx(st.root, className)}/>,
+        clock: <Clock onClick={onClick} className={clsx(st.root, className)}/>,
+        chevronDown: <ChevronDown onClick={onClick} className={clsx(st.root, className)}/>,
+        basket: <Basket onClick={onClick} className={clsx(st.root, className)}/>,
+        plus: <Plus onClick={onClick} className={clsx(st.root, className)}/>,
+        cross: <Cross onClick={onClick} className={clsx(st.root, className)}/>,
+        checkmark: <Checkmark onClick={onClick} className={clsx(st.root, className)}/>,
     }[type]
 }

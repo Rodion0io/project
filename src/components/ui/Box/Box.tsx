@@ -14,10 +14,12 @@ export const Box = (props: BoxProps) => {
         alignItems = 'stretch',
         flexWrap = 'nowrap',
         gap = '2',
+        onClick,
     } = props
 
     return (
         <div
+            onClick={onClick}
             className={
                 clsx(
                     st.root,
